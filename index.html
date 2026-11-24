@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Museum Of Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Stars -->
+    <div class="stars" id="stars"></div>
+
+    <!-- Background Music -->
+    <audio id="museumSong" src="songs/music.mp3" loop></audio>
+
+    <!-- Music Control -->
+    <button id="musicToggle" class="music-toggle">
+        ♫ Play Music
+    </button>
+
+    <!-- Main Museum -->
+    <div class="museum">
+
+        <!-- Entrance -->
+        <section class="room entrance" id="entrance">
+
+            <p class="small-text">A PLACE THAT BELONGS TO US</p>
+
+            <h1>THE MUSEUM<br>OF <span>US</span></h1>
+
+            <p class="intro">
+                Some stories deserve more than words.
+                They deserve a place of their own.
+            </p>
+
+            <button id="enterBtn">Enter Our Museum ✦</button>
+
+        </section>
+
+
+        <!-- Words Room -->
+        <section class="room" id="wordsRoom">
+
+            <p class="small-text">EXHIBIT NO. 01</p>
+
+            <h2>The <span>Words</span> Room</h2>
+
+            <p class="room-desc">
+                Some words are difficult to say aloud,
+                so I kept them here for you.
+            </p>
+
+            <div class="word-cards">
+
+                <div class="word-card" data-message="You make ordinary moments feel a little more beautiful.">
+                    <span>01</span>
+                    <h3>One Little Thing</h3>
+                    <p>Click to discover</p>
+                </div>
+
+                <div class="word-card" data-message="Even a simple conversation with you can become one of my favourite memories.">
+                    <span>02</span>
+                    <h3>A Memory</h3>
+                    <p>Click to discover</p>
+                </div>
+
+                <div class="word-card" data-message="There are so many things I appreciate about you, even the little things you don't notice.">
+                    <span>03</span>
+                    <h3>Something I Notice</h3>
+                    <p>Click to discover</p>
+                </div>
+
+                <div class="word-card" data-message="No matter how busy a day gets, I hope you always find a little time for yourself and your happiness.">
+                    <span>04</span>
+                    <h3>A Wish</h3>
+                    <p>Click to discover</p>
+                </div>
+
+                <div class="word-card" data-message="You deserve kindness, peace, happiness and beautiful things in life.">
+                    <span>05</span>
+                    <h3>Something You Deserve</h3>
+                    <p>Click to discover</p>
+                </div>
+
+                <div class="word-card" data-message="This little museum is just a collection of moments, words and thoughts that I wanted to share with you.">
+                    <span>06</span>
+                    <h3>Our Little Museum</h3>
+                    <p>Click to discover</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Constellation Room -->
+        <section class="room" id="constellationRoom">
+
+            <p class="small-text">EXHIBIT NO. 02</p>
+
+            <h2>The <span>Constellation</span></h2>
+
+            <p class="room-desc">
+                Six little stars. Six little stories.
+                Click on a star to explore.
+            </p>
+
+            <div class="constellation">
+
+                <div class="star" data-memory="The day we first started talking. ✦">✦</div>
+
+                <div class="star" data-memory="A conversation that made me smile. ✦">✦</div>
+
+                <div class="star" data-memory="A moment I wish I could replay. ✦">✦</div>
+
+                <div class="star" data-memory="A little thing that means a lot. ✦">✦</div>
+
+                <div class="star" data-memory="A thought I wanted you to know. ✦">✦</div>
+
+                <div class="star" data-memory="And a story that is still being written. ✦">✦</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Future Letters -->
+        <section class="room" id="lettersRoom">
+
+            <p class="small-text">EXHIBIT NO. 03</p>
+
+            <h2>Letters From <span>Tomorrow</span></h2>
+
+            <p class="room-desc">
+                Little letters for different kinds of days.
+            </p>
+
+            <div class="letter-cards">
+
+                <div class="letter-card" data-letter="If today feels difficult, remember to take a breath, give yourself some time and be gentle with yourself. You don't have to figure everything out today.">
+                    <div class="envelope">✉</div>
+                    <h3>Open When You're Sad</h3>
+                </div>
+
+                <div class="letter-card" data-letter="Whenever distance feels a little too much, remember that your own world is full of beautiful things too. I hope this letter brings a little comfort.">
+                    <div class="envelope">✉</div>
+                    <h3>Open When You Miss Me</h3>
+                </div>
+
+                <div class="letter-card" data-letter="Today is a special day, and I hope it brings you laughter, beautiful surprises and reasons to feel proud of yourself.">
+                    <div class="envelope">✉</div>
+                    <h3>Open On A Special Day</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Final Exhibit -->
+        <section class="room final-room" id="finalRoom">
+
+            <p class="small-text">THE FINAL EXHIBIT</p>
+
+            <h2>And This Is <span>Us</span></h2>
+
+            <p class="final-message">
+                Every little room, every little word
+                and every little star was made to
+                create a tiny place filled with memories
+                and beautiful thoughts.
+            </p>
+
+            <p class="ending">THE END? OR JUST THE BEGINNING ✦</p>
+
+        </section>
+
+    </div>
+
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+
+        <div class="popup-box">
+
+            <button id="closePopup">×</button>
+
+            <div class="popup-star">✦</div>
+
+            <p id="popupText"></p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
